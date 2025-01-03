@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>cdp_agentkit_core.actions.wow.uniswap package &#8212; CDP Agentkit - Core 0.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=1fd71caa"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="cdp_agentkit_core.actions.wow package" href="cdp_agentkit_core.actions.wow.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cdp-agentkit-core-actions-wow-uniswap-package">
+<h1>cdp_agentkit_core.actions.wow.uniswap package<a class="headerlink" href="#cdp-agentkit-core-actions-wow-uniswap-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-cdp_agentkit_core.actions.wow.uniswap.constants">
+<span id="cdp-agentkit-core-actions-wow-uniswap-constants-module"></span><h2>cdp_agentkit_core.actions.wow.uniswap.constants module<a class="headerlink" href="#module-cdp_agentkit_core.actions.wow.uniswap.constants" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-cdp_agentkit_core.actions.wow.uniswap.index">
+<span id="cdp-agentkit-core-actions-wow-uniswap-index-module"></span><h2>cdp_agentkit_core.actions.wow.uniswap.index module<a class="headerlink" href="#module-cdp_agentkit_core.actions.wow.uniswap.index" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Balance">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">Balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">erc20z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weth</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Balance" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Balance for a given token.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Balance.erc20z">
+<span class="sig-name descname"><span class="pre">erc20z</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">NewType</span></code><span class="pre">(</span><code class="docutils literal notranslate"><span class="pre">Wei</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code><span class="pre">)</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Balance.erc20z" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Balance.weth">
+<span class="sig-name descname"><span class="pre">weth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">NewType</span></code><span class="pre">(</span><code class="docutils literal notranslate"><span class="pre">Wei</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code><span class="pre">)</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Balance.weth" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">PoolInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fee</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">liquidity</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sqrt_price_x96</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Pool info for a given uniswap v3 pool.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.balance0">
+<span class="sig-name descname"><span class="pre">balance0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.balance0" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.balance1">
+<span class="sig-name descname"><span class="pre">balance1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.balance1" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.fee">
+<span class="sig-name descname"><span class="pre">fee</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.fee" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.liquidity">
+<span class="sig-name descname"><span class="pre">liquidity</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.liquidity" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.sqrt_price_x96">
+<span class="sig-name descname"><span class="pre">sqrt_price_x96</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.sqrt_price_x96" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.token0">
+<span class="sig-name descname"><span class="pre">token0</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.token0" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.token1">
+<span class="sig-name descname"><span class="pre">token1</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo.token1" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Price">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">Price</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">per_token</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Price" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Price info for a given token.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Price.per_token">
+<span class="sig-name descname"><span class="pre">per_token</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo" title="cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">PriceInfo</span></code></a></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Price.per_token" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Price.total">
+<span class="sig-name descname"><span class="pre">total</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo" title="cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo"><code class="xref py py-class docutils literal notranslate"><span class="pre">PriceInfo</span></code></a></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Price.total" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">PriceInfo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">eth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">usd</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Price info for a given token.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo.eth">
+<span class="sig-name descname"><span class="pre">eth</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">NewType</span></code><span class="pre">(</span><code class="docutils literal notranslate"><span class="pre">Wei</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code><span class="pre">)</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo.eth" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo.usd">
+<span class="sig-name descname"><span class="pre">usd</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Decimal</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo.usd" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Quote">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">Quote</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">amount_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">balance</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fee</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">error</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Quote for a given uniswap v3 swap.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Quote.amount_in">
+<span class="sig-name descname"><span class="pre">amount_in</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote.amount_in" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Quote.amount_out">
+<span class="sig-name descname"><span class="pre">amount_out</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote.amount_out" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Quote.balance">
+<span class="sig-name descname"><span class="pre">balance</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#cdp_agentkit_core.actions.wow.uniswap.index.Balance" title="cdp_agentkit_core.actions.wow.uniswap.index.Balance"><code class="xref py py-class docutils literal notranslate"><span class="pre">Balance</span></code></a> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote.balance" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Quote.error">
+<span class="sig-name descname"><span class="pre">error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote.error" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.Quote.fee">
+<span class="sig-name descname"><span class="pre">fee</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote.fee" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.create_price_info">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">create_price_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wei_amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eth_price_in_usd</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.create_price_info" title="Link to this definition">¶</a></dt>
+<dd><p>Create a PriceInfo object from wei amount and ETH price.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wei_amount</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">NewType</span></code>(<code class="docutils literal notranslate"><span class="pre">Wei</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code>)</span>) – Amount in wei</p></li>
+<li><p><strong>eth_price_in_usd</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">float</span></code></span>) – Current ETH price in USD</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A PriceInfo object containing the amount in ETH and USD</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo" title="cdp_agentkit_core.actions.wow.uniswap.index.PriceInfo">PriceInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.exact_input_single">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">exact_input_single</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_out</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount_in</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fee</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.exact_input_single" title="Link to this definition">¶</a></dt>
+<dd><p>Get exact input quote from Uniswap.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network_id</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Network ID, which is either <cite>base-sepolia</cite> or <cite>base-mainnet</cite></p></li>
+<li><p><strong>token_in</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Token address to swap from, such as <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite></p></li>
+<li><p><strong>token_out</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Token address to swap to, such as <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite></p></li>
+<li><p><strong>amount_in</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Amount of tokens to swap (in Wei)</p></li>
+<li><p><strong>fee</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Fee for the swap</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Amount of tokens to receive (in Wei)</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.get_has_graduated">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">get_has_graduated</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.get_has_graduated" title="Link to this definition">¶</a></dt>
+<dd><p>Check if a token has graduated from the Zora Wow protocol.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network_id</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Network ID, which is either <cite>base-sepolia</cite> or <cite>base-mainnet</cite></p></li>
+<li><p><strong>token_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Token address, such as <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite></p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>True if the token has graduated, False otherwise</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.get_pool_address">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">get_pool_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">token_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.get_pool_address" title="Link to this definition">¶</a></dt>
+<dd><p>Fetch the uniswap v3 pool address for a given token.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>token_address</strong> (<em>str</em>) – The address of the token contract, such as <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite></p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The uniswap v3 pool address associated with the token.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.get_pool_info">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">get_pool_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pool_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.get_pool_info" title="Link to this definition">¶</a></dt>
+<dd><p>Get pool info for a given uniswap v3 pool address.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network_id</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Network ID, which is either <cite>base-sepolia</cite> or <cite>base-mainnet</cite></p></li>
+<li><p><strong>pool_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Uniswap v3 pool address</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A PoolInfo object containing the token0, balance0, token1, balance1, fee, liquidity, and sqrt_price_x96.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo" title="cdp_agentkit_core.actions.wow.uniswap.index.PoolInfo">PoolInfo</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.wow.uniswap.index.get_uniswap_quote">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.wow.uniswap.index.</span></span><span class="sig-name descname"><span class="pre">get_uniswap_quote</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">token_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">quote_type</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.wow.uniswap.index.get_uniswap_quote" title="Link to this definition">¶</a></dt>
+<dd><p>Get Uniswap quote for buying or selling tokens.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>network_id</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Network ID, which is either <cite>base-sepolia</cite> or <cite>base-mainnet</cite></p></li>
+<li><p><strong>token_address</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span>) – Token address, such as <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite></p></li>
+<li><p><strong>amount</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">int</span></code></span>) – Amount of tokens (in Wei)</p></li>
+<li><p><strong>quote_type</strong> (<span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Literal</span></code>[<code class="docutils literal notranslate"><span class="pre">'buy'</span></code>, <code class="docutils literal notranslate"><span class="pre">'sell'</span></code>]</span>) – ‘buy’ or ‘sell’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A Quote object containing the amount in, amount out, balance, fee, and any error messages.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#cdp_agentkit_core.actions.wow.uniswap.index.Quote" title="cdp_agentkit_core.actions.wow.uniswap.index.Quote">Quote</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.wow.uniswap">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cdp_agentkit_core.actions.wow.uniswap" title="Link to this heading">¶</a></h2>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CDP Agentkit - Core</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">cdp_agentkit_core</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cdp_agentkit_core.html">cdp_agentkit_core package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">cdp_agentkit_core</a><ul>
+  <li><a href="cdp_agentkit_core.html">cdp_agentkit_core package</a><ul>
+  <li><a href="cdp_agentkit_core.actions.html">cdp_agentkit_core.actions package</a><ul>
+  <li><a href="cdp_agentkit_core.actions.wow.html">cdp_agentkit_core.actions.wow package</a><ul>
+      <li>Previous: <a href="cdp_agentkit_core.actions.wow.html" title="previous chapter">cdp_agentkit_core.actions.wow package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/cdp_agentkit_core.actions.wow.uniswap.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

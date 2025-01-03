@@ -1,0 +1,18 @@
+cdp\_agentkit\_core.actions.social package
+==========================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   cdp_agentkit_core.actions.social.twitter
+
+Module contents
+---------------
+
+.. automodule:: cdp_agentkit_core.actions.social
+   :members:
+   :undoc-members:
+   :show-inheritance:

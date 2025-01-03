@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>cdp_agentkit_core.actions package &#8212; CDP Agentkit - Core 0.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=1fd71caa"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="cdp_agentkit_core.actions.social package" href="cdp_agentkit_core.actions.social.html" />
+    <link rel="prev" title="cdp_agentkit_core package" href="cdp_agentkit_core.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cdp-agentkit-core-actions-package">
+<h1>cdp_agentkit_core.actions package<a class="headerlink" href="#cdp-agentkit-core-actions-package" title="Link to this heading">¶</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">¶</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cdp_agentkit_core.actions.social.html">cdp_agentkit_core.actions.social package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.social.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html">cdp_agentkit_core.actions.social.twitter package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#cdp-agentkit-core-actions-social-twitter-account-details-module">cdp_agentkit_core.actions.social.twitter.account_details module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#cdp-agentkit-core-actions-social-twitter-account-mentions-module">cdp_agentkit_core.actions.social.twitter.account_mentions module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#cdp-agentkit-core-actions-social-twitter-action-module">cdp_agentkit_core.actions.social.twitter.action module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#cdp-agentkit-core-actions-social-twitter-post-tweet-module">cdp_agentkit_core.actions.social.twitter.post_tweet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#cdp-agentkit-core-actions-social-twitter-post-tweet-reply-module">cdp_agentkit_core.actions.social.twitter.post_tweet_reply module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.social.twitter.html#module-contents">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.social.html#module-cdp_agentkit_core.actions.social">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html">cdp_agentkit_core.actions.wow package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.uniswap.html">cdp_agentkit_core.actions.wow.uniswap package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.uniswap.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.uniswap.html#module-cdp_agentkit_core.actions.wow.uniswap.constants">cdp_agentkit_core.actions.wow.uniswap.constants module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.uniswap.html#module-cdp_agentkit_core.actions.wow.uniswap.index">cdp_agentkit_core.actions.wow.uniswap.index module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.uniswap.html#module-cdp_agentkit_core.actions.wow.uniswap">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#module-cdp_agentkit_core.actions.wow.buy_token">cdp_agentkit_core.actions.wow.buy_token module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenAction"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenAction.args_schema"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenAction.args_schema</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenAction.description"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenAction.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenAction.func"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenAction.func</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenAction.model_config"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenAction.name"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenAction.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenInput"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenInput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenInput.amount_eth_in_wei"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenInput.amount_eth_in_wei</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenInput.contract_address"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenInput.contract_address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.WowBuyTokenInput.model_config"><code class="docutils literal notranslate"><span class="pre">WowBuyTokenInput.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.buy_token.wow_buy_token"><code class="docutils literal notranslate"><span class="pre">wow_buy_token()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#module-cdp_agentkit_core.actions.wow.constants">cdp_agentkit_core.actions.wow.constants module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.constants.get_factory_address"><code class="docutils literal notranslate"><span class="pre">get_factory_address()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#module-cdp_agentkit_core.actions.wow.create_token">cdp_agentkit_core.actions.wow.create_token module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenAction"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenAction.args_schema"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenAction.args_schema</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenAction.description"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenAction.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenAction.func"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenAction.func</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenAction.model_config"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenAction.name"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenAction.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenInput"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenInput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenInput.model_config"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenInput.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenInput.name"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenInput.name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenInput.symbol"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenInput.symbol</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.WowCreateTokenInput.token_uri"><code class="docutils literal notranslate"><span class="pre">WowCreateTokenInput.token_uri</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.create_token.wow_create_token"><code class="docutils literal notranslate"><span class="pre">wow_create_token()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#module-cdp_agentkit_core.actions.wow.sell_token">cdp_agentkit_core.actions.wow.sell_token module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenAction"><code class="docutils literal notranslate"><span class="pre">WowSellTokenAction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenAction.args_schema"><code class="docutils literal notranslate"><span class="pre">WowSellTokenAction.args_schema</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenAction.description"><code class="docutils literal notranslate"><span class="pre">WowSellTokenAction.description</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenAction.func"><code class="docutils literal notranslate"><span class="pre">WowSellTokenAction.func</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenAction.model_config"><code class="docutils literal notranslate"><span class="pre">WowSellTokenAction.model_config</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenAction.name"><code class="docutils literal notranslate"><span class="pre">WowSellTokenAction.name</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenInput"><code class="docutils literal notranslate"><span class="pre">WowSellTokenInput</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenInput.amount_tokens_in_wei"><code class="docutils literal notranslate"><span class="pre">WowSellTokenInput.amount_tokens_in_wei</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenInput.contract_address"><code class="docutils literal notranslate"><span class="pre">WowSellTokenInput.contract_address</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.WowSellTokenInput.model_config"><code class="docutils literal notranslate"><span class="pre">WowSellTokenInput.model_config</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.sell_token.wow_sell_token"><code class="docutils literal notranslate"><span class="pre">wow_sell_token()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#module-cdp_agentkit_core.actions.wow.utils">cdp_agentkit_core.actions.wow.utils module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.utils.get_buy_quote"><code class="docutils literal notranslate"><span class="pre">get_buy_quote()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.utils.get_current_supply"><code class="docutils literal notranslate"><span class="pre">get_current_supply()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#cdp_agentkit_core.actions.wow.utils.get_sell_quote"><code class="docutils literal notranslate"><span class="pre">get_sell_quote()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="cdp_agentkit_core.actions.wow.html#module-cdp_agentkit_core.actions.wow">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-cdp_agentkit_core.actions.cdp_action">
+<span id="cdp-agentkit-core-actions-cdp-action-module"></span><h2>cdp_agentkit_core.actions.cdp_action module<a class="headerlink" href="#module-cdp_agentkit_core.actions.cdp_action" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.cdp_action.CdpAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.cdp_action.</span></span><span class="sig-name descname"><span class="pre">CdpAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>CDP Action Base Class.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.cdp_action.CdpAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.cdp_action.CdpAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.cdp_action.CdpAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.cdp_action.CdpAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.cdp_action.CdpAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.cdp_action.CdpAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.cdp_action.CdpAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.cdp_action.CdpAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.cdp_action.CdpAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.cdp_action.CdpAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.deploy_nft">
+<span id="cdp-agentkit-core-actions-deploy-nft-module"></span><h2>cdp_agentkit_core.actions.deploy_nft module<a class="headerlink" href="#module-cdp_agentkit_core.actions.deploy_nft" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.deploy_nft.</span></span><span class="sig-name descname"><span class="pre">DeployNftAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Deploy NFT action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.deploy_nft.</span></span><span class="sig-name descname"><span class="pre">DeployNftInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for deploy NFT action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftInput.base_uri">
+<span class="sig-name descname"><span class="pre">base_uri</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftInput.base_uri" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftInput.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftInput.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.DeployNftInput.symbol">
+<span class="sig-name descname"><span class="pre">symbol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.DeployNftInput.symbol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_nft.deploy_nft">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.deploy_nft.</span></span><span class="sig-name descname"><span class="pre">deploy_nft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_uri</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_nft.deploy_nft" title="Link to this definition">¶</a></dt>
+<dd><p>Deploy an NFT (ERC-721) token collection onchain from the wallet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to deploy the NFT from.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name of the NFT (ERC-721) token collection to deploy, e.g. <cite>Helpful Hippos</cite>.</p></li>
+<li><p><strong>symbol</strong> (<em>str</em>) – The symbol of the NFT (ERC-721) token collection to deploy, e.g. <cite>HIPPO</cite>.</p></li>
+<li><p><strong>base_uri</strong> (<em>str</em>) – The base URI for the NFT (ERC-721) token collection’s metadata, e.g. <cite>https://www.helpfulhippos.xyz/metadata/</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the NFT token deployment details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.deploy_token">
+<span id="cdp-agentkit-core-actions-deploy-token-module"></span><h2>cdp_agentkit_core.actions.deploy_token module<a class="headerlink" href="#module-cdp_agentkit_core.actions.deploy_token" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.deploy_token.</span></span><span class="sig-name descname"><span class="pre">DeployTokenAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Deploy token action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.deploy_token.</span></span><span class="sig-name descname"><span class="pre">DeployTokenInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for deploy token action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenInput.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenInput.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenInput.symbol">
+<span class="sig-name descname"><span class="pre">symbol</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenInput.symbol" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.DeployTokenInput.total_supply">
+<span class="sig-name descname"><span class="pre">total_supply</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.DeployTokenInput.total_supply" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.deploy_token.deploy_token">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.deploy_token.</span></span><span class="sig-name descname"><span class="pre">deploy_token</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">symbol</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">total_supply</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.deploy_token.deploy_token" title="Link to this definition">¶</a></dt>
+<dd><p>Deploy an ERC20 token smart contract.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>wallet</em>) – The wallet to deploy the Token from.</p></li>
+<li><p><strong>name</strong> (<em>str</em>) – The name of the token (e.g., “My Token”)</p></li>
+<li><p><strong>symbol</strong> (<em>str</em>) – The token symbol (e.g., “USDC”, “MEME”, “SYM”)</p></li>
+<li><p><strong>total_supply</strong> (<em>str</em>) – The total supply of tokens to mint (e.g., “1000000”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the deployed token contract address and details</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.get_balance">
+<span id="cdp-agentkit-core-actions-get-balance-module"></span><h2>cdp_agentkit_core.actions.get_balance module<a class="headerlink" href="#module-cdp_agentkit_core.actions.get_balance" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.get_balance.</span></span><span class="sig-name descname"><span class="pre">GetBalanceAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Get wallet balance action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.get_balance.</span></span><span class="sig-name descname"><span class="pre">GetBalanceInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for get balance action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceInput.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceInput.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.GetBalanceInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.GetBalanceInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_balance.get_balance">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.get_balance.</span></span><span class="sig-name descname"><span class="pre">get_balance</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.get_balance.get_balance" title="Link to this definition">¶</a></dt>
+<dd><p>Get balance for all addresses in the wallet for a given asset.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to get the balance for.</p></li>
+<li><p><strong>asset_id</strong> (<em>str</em>) – The asset ID to get the balance for (e.g., “eth”, “usdc”, or a valid contract address like “0x036CbD53842c5426634e7929541eC2318f3dCF7e”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the balance information of all addresses in the wallet.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.get_wallet_details">
+<span id="cdp-agentkit-core-actions-get-wallet-details-module"></span><h2>cdp_agentkit_core.actions.get_wallet_details module<a class="headerlink" href="#module-cdp_agentkit_core.actions.get_wallet_details" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.get_wallet_details.</span></span><span class="sig-name descname"><span class="pre">GetWalletDetailsAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Get wallet details action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.get_wallet_details.</span></span><span class="sig-name descname"><span class="pre">GetWalletDetailsInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for get wallet details action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.GetWalletDetailsInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.get_wallet_details.get_wallet_details">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.get_wallet_details.</span></span><span class="sig-name descname"><span class="pre">get_wallet_details</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.get_wallet_details.get_wallet_details" title="Link to this definition">¶</a></dt>
+<dd><p>Get a wallet’s details.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to trade the asset from.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the wallet details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.mint_nft">
+<span id="cdp-agentkit-core-actions-mint-nft-module"></span><h2>cdp_agentkit_core.actions.mint_nft module<a class="headerlink" href="#module-cdp_agentkit_core.actions.mint_nft" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.mint_nft.</span></span><span class="sig-name descname"><span class="pre">MintNftAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Mint NFT action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.mint_nft.</span></span><span class="sig-name descname"><span class="pre">MintNftInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for mint NFT action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftInput.contract_address">
+<span class="sig-name descname"><span class="pre">contract_address</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftInput.contract_address" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftInput.destination">
+<span class="sig-name descname"><span class="pre">destination</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftInput.destination" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.MintNftInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.MintNftInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.mint_nft.mint_nft">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.mint_nft.</span></span><span class="sig-name descname"><span class="pre">mint_nft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">contract_address</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.mint_nft.mint_nft" title="Link to this definition">¶</a></dt>
+<dd><p>Mint an NFT (ERC-721) to a specified destination address onchain via a contract invocation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to trade the asset from.</p></li>
+<li><p><strong>contract_address</strong> (<em>str</em>) – The contract address of the NFT (ERC-721) to mint, e.g. <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite>.</p></li>
+<li><p><strong>destination</strong> (<em>str</em>) – The destination address that will receive the NFT onchain, e.g. <cite>0x036CbD53842c5426634e7929541eC2318f3dCF7e</cite>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the NFT mint details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.register_basename">
+<span id="cdp-agentkit-core-actions-register-basename-module"></span><h2>cdp_agentkit_core.actions.register_basename module<a class="headerlink" href="#module-cdp_agentkit_core.actions.register_basename" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.register_basename.</span></span><span class="sig-name descname"><span class="pre">RegisterBasenameAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Register Basename action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.register_basename.</span></span><span class="sig-name descname"><span class="pre">RegisterBasenameInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for registering a Basename.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameInput.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameInput.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameInput.basename">
+<span class="sig-name descname"><span class="pre">basename</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameInput.basename" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.RegisterBasenameInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.RegisterBasenameInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.create_register_contract_method_args">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.register_basename.</span></span><span class="sig-name descname"><span class="pre">create_register_contract_method_args</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">address_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_mainnet</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.create_register_contract_method_args" title="Link to this definition">¶</a></dt>
+<dd><p>Create registration arguments for Basenames.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base_name</strong> (<em>str</em>) – The Basename (e.g., “example.base.eth” or “example.basetest.eth”)</p></li>
+<li><p><strong>address_id</strong> (<em>str</em>) – The Ethereum address</p></li>
+<li><p><strong>is_mainnet</strong> (<em>bool</em>) – True if on mainnet, False if on testnet</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Formatted arguments for the register contract method</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.register_basename.register_basename">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.register_basename.</span></span><span class="sig-name descname"><span class="pre">register_basename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">basename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.002'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.register_basename.register_basename" title="Link to this definition">¶</a></dt>
+<dd><p>Register a Basename for the agent.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to register the Basename with.</p></li>
+<li><p><strong>basename</strong> (<em>str</em>) – The Basename to assign to the agent.</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – The amount of ETH to pay for the registration. The default is set to 0.002.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Confirmation message with the basename.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.request_faucet_funds">
+<span id="cdp-agentkit-core-actions-request-faucet-funds-module"></span><h2>cdp_agentkit_core.actions.request_faucet_funds module<a class="headerlink" href="#module-cdp_agentkit_core.actions.request_faucet_funds" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.request_faucet_funds.</span></span><span class="sig-name descname"><span class="pre">RequestFaucetFundsAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Request faucet funds action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.request_faucet_funds.</span></span><span class="sig-name descname"><span class="pre">RequestFaucetFundsInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for request faucet funds action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsInput.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsInput.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.RequestFaucetFundsInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.request_faucet_funds.request_faucet_funds">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.request_faucet_funds.</span></span><span class="sig-name descname"><span class="pre">request_faucet_funds</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.request_faucet_funds.request_faucet_funds" title="Link to this definition">¶</a></dt>
+<dd><p>Request test tokens from the faucet for the default address in the wallet.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to receive tokens</p></li>
+<li><p><strong>asset_id</strong> (<em>str</em><em> | </em><em>None</em>) – The optional asset ID to request from the faucet. Accepts “eth” or “usdc”. When omitted, defaults to the network’s native asset.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Confirmation message with transaction details</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.trade">
+<span id="cdp-agentkit-core-actions-trade-module"></span><h2>cdp_agentkit_core.actions.trade module<a class="headerlink" href="#module-cdp_agentkit_core.actions.trade" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.trade.</span></span><span class="sig-name descname"><span class="pre">TradeAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Trade action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.trade.</span></span><span class="sig-name descname"><span class="pre">TradeInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for trade action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeInput.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeInput.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeInput.from_asset_id">
+<span class="sig-name descname"><span class="pre">from_asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeInput.from_asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.TradeInput.to_asset_id">
+<span class="sig-name descname"><span class="pre">to_asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.trade.TradeInput.to_asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.trade.trade">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.trade.</span></span><span class="sig-name descname"><span class="pre">trade</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_asset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_asset_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.trade.trade" title="Link to this definition">¶</a></dt>
+<dd><p>Trade a specified amount of a from asset to a to asset for the wallet. Trades are only supported on Mainnets.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to trade the asset from.</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – The amount of the from asset to trade, e.g. <cite>15</cite>, <cite>0.000001</cite>.</p></li>
+<li><p><strong>from_asset_id</strong> (<em>str</em>) – The from asset ID to trade (e.g., “eth”, “usdc”, or a valid contract address like “0x036CbD53842c5426634e7929541eC2318f3dCF7e”).</p></li>
+<li><p><strong>to_asset_id</strong> (<em>str</em>) – The from asset ID to trade (e.g., “eth”, “usdc”, or a valid contract address like “0x036CbD53842c5426634e7929541eC2318f3dCF7e”).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the trade details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions.transfer">
+<span id="cdp-agentkit-core-actions-transfer-module"></span><h2>cdp_agentkit_core.actions.transfer module<a class="headerlink" href="#module-cdp_agentkit_core.actions.transfer" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.transfer.</span></span><span class="sig-name descname"><span class="pre">TransferAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Transfer action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferInput">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.transfer.</span></span><span class="sig-name descname"><span class="pre">TransferInput</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferInput" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Input argument schema for transfer action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferInput.amount">
+<span class="sig-name descname"><span class="pre">amount</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferInput.amount" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferInput.asset_id">
+<span class="sig-name descname"><span class="pre">asset_id</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferInput.asset_id" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferInput.destination">
+<span class="sig-name descname"><span class="pre">destination</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferInput.destination" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferInput.gasless">
+<span class="sig-name descname"><span class="pre">gasless</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">bool</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferInput.gasless" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.TransferInput.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.TransferInput.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.transfer.transfer">
+<span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.transfer.</span></span><span class="sig-name descname"><span class="pre">transfer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">wallet</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">amount</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">asset_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">destination</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gasless</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.transfer.transfer" title="Link to this definition">¶</a></dt>
+<dd><p>Transfer a specified amount of an asset to a destination onchain. USDC Transfers on Base Sepolia and Mainnet can be gasless. Always use the gasless option when available.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>wallet</strong> (<em>Wallet</em>) – The wallet to transfer the asset from.</p></li>
+<li><p><strong>amount</strong> (<em>str</em>) – The amount of the asset to transfer, e.g. <cite>15</cite>, <cite>0.000001</cite>.</p></li>
+<li><p><strong>asset_id</strong> (<em>str</em>) – The asset ID to transfer (e.g., “eth”, “usdc”, or a valid contract address like “0x036CbD53842c5426634e7929541eC2318f3dCF7e”).</p></li>
+<li><p><strong>destination</strong> (<em>str</em>) – The destination to transfer the funds (e.g. <cite>0x58dBecc0894Ab4C24F98a0e684c989eD07e4e027</cite>, <cite>example.eth</cite>, <cite>example.base.eth</cite>).</p></li>
+<li><p><strong>gasless</strong> (<em>bool</em>) – Whether to send a gasless transfer (Defaults to False.).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A message containing the transfer details.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-cdp_agentkit_core.actions">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-cdp_agentkit_core.actions" title="Link to this heading">¶</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.CdpAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">CdpAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.CdpAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>CDP Action Base Class.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.CdpAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.CdpAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.CdpAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.CdpAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.CdpAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.CdpAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.CdpAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.CdpAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.CdpAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.CdpAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployNftAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">DeployNftAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.DeployNftAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Deploy NFT action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployNftAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployNftAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployNftAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployNftAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployNftAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployNftAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployNftAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployNftAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployNftAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployNftAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployTokenAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">DeployTokenAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.DeployTokenAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Deploy token action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployTokenAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployTokenAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployTokenAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployTokenAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployTokenAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployTokenAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployTokenAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployTokenAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.DeployTokenAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.DeployTokenAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetBalanceAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">GetBalanceAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.GetBalanceAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Get wallet balance action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetBalanceAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetBalanceAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetBalanceAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetBalanceAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetBalanceAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetBalanceAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetBalanceAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetBalanceAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetBalanceAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetBalanceAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetWalletDetailsAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">GetWalletDetailsAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.GetWalletDetailsAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Get wallet details action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetWalletDetailsAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetWalletDetailsAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetWalletDetailsAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetWalletDetailsAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetWalletDetailsAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetWalletDetailsAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetWalletDetailsAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetWalletDetailsAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.GetWalletDetailsAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.GetWalletDetailsAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.MintNftAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">MintNftAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.MintNftAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Mint NFT action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.MintNftAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.MintNftAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.MintNftAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.MintNftAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.MintNftAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.MintNftAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.MintNftAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.MintNftAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.MintNftAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.MintNftAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RegisterBasenameAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">RegisterBasenameAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.RegisterBasenameAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Register Basename action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RegisterBasenameAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.RegisterBasenameAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RegisterBasenameAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.RegisterBasenameAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RegisterBasenameAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.RegisterBasenameAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RegisterBasenameAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.RegisterBasenameAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RegisterBasenameAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.RegisterBasenameAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RequestFaucetFundsAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">RequestFaucetFundsAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.RequestFaucetFundsAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Request faucet funds action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RequestFaucetFundsAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.RequestFaucetFundsAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RequestFaucetFundsAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.RequestFaucetFundsAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RequestFaucetFundsAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.RequestFaucetFundsAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RequestFaucetFundsAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.RequestFaucetFundsAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.RequestFaucetFundsAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.RequestFaucetFundsAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TradeAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">TradeAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.TradeAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Trade action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TradeAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.TradeAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TradeAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.TradeAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TradeAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.TradeAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TradeAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.TradeAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TradeAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.TradeAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TransferAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">TransferAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.TransferAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Transfer action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TransferAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.TransferAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TransferAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.TransferAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TransferAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.TransferAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TransferAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.TransferAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.TransferAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.TransferAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowBuyTokenAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">WowBuyTokenAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.WowBuyTokenAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Zora Wow buy token action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowBuyTokenAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowBuyTokenAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowBuyTokenAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowBuyTokenAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowBuyTokenAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowBuyTokenAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowBuyTokenAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowBuyTokenAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowBuyTokenAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowBuyTokenAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowCreateTokenAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">WowCreateTokenAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.WowCreateTokenAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Zora Wow create token action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowCreateTokenAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowCreateTokenAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowCreateTokenAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowCreateTokenAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowCreateTokenAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowCreateTokenAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowCreateTokenAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowCreateTokenAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowCreateTokenAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowCreateTokenAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowSellTokenAction">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">cdp_agentkit_core.actions.</span></span><span class="sig-name descname"><span class="pre">WowSellTokenAction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#cdp_agentkit_core.actions.WowSellTokenAction" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#cdp_agentkit_core.actions.cdp_action.CdpAction" title="cdp_agentkit_core.actions.cdp_action.CdpAction"><code class="xref py py-class docutils literal notranslate"><span class="pre">CdpAction</span></code></a></p>
+<p>Zora Wow sell token action.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowSellTokenAction.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowSellTokenAction.args_schema" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowSellTokenAction.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowSellTokenAction.description" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowSellTokenAction.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowSellTokenAction.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowSellTokenAction.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowSellTokenAction.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="cdp_agentkit_core.actions.WowSellTokenAction.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#cdp_agentkit_core.actions.WowSellTokenAction.name" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CDP Agentkit - Core</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">cdp_agentkit_core</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="cdp_agentkit_core.html">cdp_agentkit_core package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">cdp_agentkit_core</a><ul>
+  <li><a href="cdp_agentkit_core.html">cdp_agentkit_core package</a><ul>
+      <li>Previous: <a href="cdp_agentkit_core.html" title="previous chapter">cdp_agentkit_core package</a></li>
+      <li>Next: <a href="cdp_agentkit_core.actions.social.html" title="next chapter">cdp_agentkit_core.actions.social package</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/cdp_agentkit_core.actions.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

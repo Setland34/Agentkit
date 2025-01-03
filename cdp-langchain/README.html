@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CDP Agentkit Extension - Langchain Toolkit &#8212; CDP Agentkit - LangChain 0.0.8 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=53b53b71"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="cdp-agentkit-extension-langchain-toolkit">
+<h1>CDP Agentkit Extension - Langchain Toolkit<a class="headerlink" href="#cdp-agentkit-extension-langchain-toolkit" title="Link to this heading">¶</a></h1>
+<p>CDP integration with Langchain to enable agentic workflows using the core primitives defined in <code class="docutils literal notranslate"><span class="pre">cdp-agentkit-core</span></code>.</p>
+<p>This toolkit contains tools that enable an LLM agent to interact with the <a class="reference external" href="https://docs.cdp.coinbase.com/">Coinbase Developer Platform</a>. The toolkit provides a wrapper around the CDP SDK, allowing agents to perform onchain operations like transfers, trades, and smart contract interactions.</p>
+<section id="setup">
+<h2>Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h2>
+<section id="prerequisites">
+<h3>Prerequisites<a class="headerlink" href="#prerequisites" title="Link to this heading">¶</a></h3>
+<ul class="simple">
+<li><p>Python 3.10 or higher</p></li>
+<li><p><a class="reference external" href="https://portal.cdp.coinbase.com/access/api">CDP API Key</a></p></li>
+</ul>
+</section>
+<section id="installation">
+<h3>Installation<a class="headerlink" href="#installation" title="Link to this heading">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>cdp-langchain
+</pre></div>
+</div>
+</section>
+<section id="environment-setup">
+<h3>Environment Setup<a class="headerlink" href="#environment-setup" title="Link to this heading">¶</a></h3>
+<p>Set the following environment variables:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span><span class="w"> </span><span class="nv">CDP_API_KEY_NAME</span><span class="o">=</span>&lt;your-api-key-name&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">CDP_API_KEY_PRIVATE_KEY</span><span class="o">=</span><span class="s1">$&#39;&lt;your-private-key&gt;&#39;</span>
+<span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>&lt;your-openai-api-key&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">NETWORK_ID</span><span class="o">=</span>base-sepolia<span class="w">  </span><span class="c1"># Optional: Defaults to base-sepolia</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="usage">
+<h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">¶</a></h2>
+<section id="basic-setup">
+<h3>Basic Setup<a class="headerlink" href="#basic-setup" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">cdp_langchain.agent_toolkits</span> <span class="kn">import</span> <span class="n">CdpToolkit</span>
+<span class="kn">from</span> <span class="nn">cdp_langchain.utils</span> <span class="kn">import</span> <span class="n">CdpAgentkitWrapper</span>
+
+<span class="c1"># Initialize CDP wrapper</span>
+<span class="n">cdp</span> <span class="o">=</span> <span class="n">CdpAgentkitWrapper</span><span class="p">()</span>
+
+<span class="c1"># Create toolkit from wrapper</span>
+<span class="n">toolkit</span> <span class="o">=</span> <span class="n">CdpToolkit</span><span class="o">.</span><span class="n">from_cdp_agentkit_wrapper</span><span class="p">(</span><span class="n">cdp</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>View available tools:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tools</span> <span class="o">=</span> <span class="n">toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">tool</span> <span class="ow">in</span> <span class="n">tools</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tool</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The toolkit provides the following tools:</p>
+<ol class="arabic simple">
+<li><p><strong>get_wallet_details</strong> - Get details about the MPC Wallet</p></li>
+<li><p><strong>get_balance</strong> - Get balance for specific assets</p></li>
+<li><p><strong>request_faucet_funds</strong> - Request test tokens from faucet</p></li>
+<li><p><strong>transfer</strong> - Transfer assets between addresses</p></li>
+<li><p><strong>trade</strong> - Trade assets (Mainnet only)</p></li>
+<li><p><strong>deploy_token</strong> - Deploy ERC-20 token contracts</p></li>
+<li><p><strong>mint_nft</strong> - Mint NFTs from existing contracts</p></li>
+<li><p><strong>deploy_nft</strong> - Deploy new NFT contracts</p></li>
+<li><p><strong>register_basename</strong> - Register a basename for the wallet</p></li>
+<li><p><strong>wow_create_token</strong> - Deploy a token using Zora’s Wow Launcher (Bonding Curve)</p></li>
+<li><p><strong>wow_buy_token</strong> - Buy Zora Wow ERC20 memecoin with ETH</p></li>
+<li><p><strong>wow_sell_token</strong> - Sell Zora Wow ERC20 memecoin for ETH</p></li>
+</ol>
+</section>
+<section id="using-with-an-agent">
+<h3>Using with an Agent<a class="headerlink" href="#using-with-an-agent" title="Link to this heading">¶</a></h3>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_openai</span> <span class="kn">import</span> <span class="n">ChatOpenAI</span>
+<span class="kn">from</span> <span class="nn">langgraph.prebuilt</span> <span class="kn">import</span> <span class="n">create_react_agent</span>
+
+<span class="c1"># Initialize LLM</span>
+<span class="n">llm</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+
+<span class="c1"># Get tools and create agent</span>
+<span class="n">tools</span> <span class="o">=</span> <span class="n">toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span>
+<span class="n">agent_executor</span> <span class="o">=</span> <span class="n">create_react_agent</span><span class="p">(</span><span class="n">llm</span><span class="p">,</span> <span class="n">tools</span><span class="p">)</span>
+
+<span class="c1"># Example usage</span>
+<span class="n">events</span> <span class="o">=</span> <span class="n">agent_executor</span><span class="o">.</span><span class="n">stream</span><span class="p">(</span>
+    <span class="p">{</span><span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="s2">&quot;Send 0.005 ETH to john2879.base.eth&quot;</span><span class="p">)]},</span>
+    <span class="n">stream_mode</span><span class="o">=</span><span class="s2">&quot;values&quot;</span>
+<span class="p">)</span>
+
+<span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
+    <span class="n">event</span><span class="p">[</span><span class="s2">&quot;messages&quot;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pretty_print</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Expected output:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Transferred</span> <span class="mf">0.005</span> <span class="n">of</span> <span class="n">eth</span> <span class="n">to</span> <span class="n">john2879</span><span class="o">.</span><span class="n">base</span><span class="o">.</span><span class="n">eth</span><span class="o">.</span>
+<span class="n">Transaction</span> <span class="nb">hash</span> <span class="k">for</span> <span class="n">the</span> <span class="n">transfer</span><span class="p">:</span> <span class="mh">0x78c7c2878659a0de216d0764fc87eff0d38b47f3315fa02ba493a83d8e782d1e</span>
+<span class="n">Transaction</span> <span class="n">link</span> <span class="k">for</span> <span class="n">the</span> <span class="n">transfer</span><span class="p">:</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">sepolia</span><span class="o">.</span><span class="n">basescan</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">tx</span><span class="o">/</span><span class="mh">0x78c7c2878659a0de216d0764fc87eff0d38b47f3315fa02ba493a83d8e782d1</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="cdp-tookit-specific-features">
+<h2>CDP Tookit Specific Features<a class="headerlink" href="#cdp-tookit-specific-features" title="Link to this heading">¶</a></h2>
+<section id="wallet-management">
+<h3>Wallet Management<a class="headerlink" href="#wallet-management" title="Link to this heading">¶</a></h3>
+<p>The toolkit maintains an MPC wallet that persists between sessions:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Export wallet data</span>
+<span class="n">wallet_data</span> <span class="o">=</span> <span class="n">cdp</span><span class="o">.</span><span class="n">export_wallet</span><span class="p">()</span>
+
+<span class="c1"># Import wallet data</span>
+<span class="n">values</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;cdp_wallet_data&quot;</span><span class="p">:</span> <span class="n">wallet_data</span><span class="p">}</span>
+<span class="n">cdp</span> <span class="o">=</span> <span class="n">CdpAgentkitWrapper</span><span class="p">(</span><span class="o">**</span><span class="n">values</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="network-support">
+<h3>Network Support<a class="headerlink" href="#network-support" title="Link to this heading">¶</a></h3>
+<p>The toolkit supports <a class="reference external" href="https://docs.cdp.coinbase.com/cdp-sdk/docs/networks">multiple networks</a>.</p>
+</section>
+<section id="gasless-transactions">
+<h3>Gasless Transactions<a class="headerlink" href="#gasless-transactions" title="Link to this heading">¶</a></h3>
+<p>The following operations support gasless transactions on Base Mainnet:</p>
+<ul class="simple">
+<li><p>USDC transfers</p></li>
+<li><p>EURC transfers</p></li>
+<li><p>cbBTC transfers</p></li>
+</ul>
+</section>
+</section>
+<section id="contributing">
+<h2>Contributing<a class="headerlink" href="#contributing" title="Link to this heading">¶</a></h2>
+<p>See <a class="reference internal" href="#../CONTRIBUTING.md"><span class="xref myst">CONTRIBUTING.md</span></a> for detailed setup instructions and contribution guidelines.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CDP Agentkit - LangChain</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">cdp_langchain</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/README.md.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

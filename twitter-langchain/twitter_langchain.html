@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+
+<html lang="en" data-content_root="./">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>twitter_langchain package &#8212; CDP Agentkit - Twitter LangChain 0.0.6 documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d1102ebc" />
+    <link rel="stylesheet" type="text/css" href="_static/basic.css?v=686e5160" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css?v=27fed22d" />
+    <script src="_static/documentation_options.js?v=1fd71caa"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="twitter_langchain" href="modules.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+
+  
+  
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="twitter-langchain-package">
+<h1>twitter_langchain package<a class="headerlink" href="#twitter-langchain-package" title="Link to this heading">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">¶</a></h2>
+</section>
+<section id="module-twitter_langchain.twitter_api_wrapper">
+<span id="twitter-langchain-twitter-api-wrapper-module"></span><h2>twitter_langchain.twitter_api_wrapper module<a class="headerlink" href="#module-twitter_langchain.twitter_api_wrapper" title="Link to this heading">¶</a></h2>
+<p>Util that calls Twitter API.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">twitter_langchain.twitter_api_wrapper.</span></span><span class="sig-name descname"><span class="pre">TwitterApiWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Wrapper for Twitter API.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.client">
+<span class="sig-name descname"><span class="pre">client</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span></em><a class="headerlink" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.client" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.run_action">
+<span class="sig-name descname"><span class="pre">run_action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.run_action" title="Link to this definition">¶</a></dt>
+<dd><p>Run a Twitter Action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.validate_environment">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">validate_environment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper.validate_environment" title="Link to this definition">¶</a></dt>
+<dd><p>Validate that Twitter access token, token secret, and tweepy exists in the environment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-twitter_langchain.twitter_tool">
+<span id="twitter-langchain-twitter-tool-module"></span><h2>twitter_langchain.twitter_tool module<a class="headerlink" href="#module-twitter_langchain.twitter_tool" title="Link to this heading">¶</a></h2>
+<p>Tool allows agents to interact with the Twitter API.</p>
+<dl class="simple">
+<dt>To use this tool, you must first set as environment variables:</dt><dd><p>OPENAI_API_KEY
+TWITTER_API_KEY
+TWITTER_API_SECRET
+TWITTER_ACCESS_TOKEN
+TWITTER_ACCESS_TOKEN_SECRET
+TWITTER_BEARER_TOKEN</p>
+</dd>
+</dl>
+<dl class="py class">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">twitter_langchain.twitter_tool.</span></span><span class="sig-name descname"><span class="pre">TwitterTool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTool</span></code></p>
+<p>Tool for interacting with the Twitter API.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool.args_schema" title="Link to this definition">¶</a></dt>
+<dd><p>Pydantic model class to validate and parse the tool’s input arguments.</p>
+<p>Args schema should be either:</p>
+<ul class="simple">
+<li><p>A subclass of pydantic.BaseModel.</p></li>
+</ul>
+<p>or
+- A subclass of pydantic.v1.BaseModel if accessing v1 namespace in pydantic 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool.description" title="Link to this definition">¶</a></dt>
+<dd><p>Used to tell the model how/when/why to use the tool.</p>
+<p>You can provide few-shot examples as a part of the description.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'arbitrary_types_allowed':</span> <span class="pre">True,</span> <span class="pre">'extra':</span> <span class="pre">'ignore',</span> <span class="pre">'protected_namespaces':</span> <span class="pre">()}</span></em><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool.name" title="Link to this definition">¶</a></dt>
+<dd><p>The unique name of the tool that clearly communicates its purpose.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_tool.TwitterTool.twitter_api_wrapper">
+<span class="sig-name descname"><span class="pre">twitter_api_wrapper</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper" title="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwitterApiWrapper</span></code></a></em><a class="headerlink" href="#twitter_langchain.twitter_tool.TwitterTool.twitter_api_wrapper" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-twitter_langchain.twitter_toolkit">
+<span id="twitter-langchain-twitter-toolkit-module"></span><h2>twitter_langchain.twitter_toolkit module<a class="headerlink" href="#module-twitter_langchain.twitter_toolkit" title="Link to this heading">¶</a></h2>
+<p>TwitterToolkit.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_toolkit.TwitterToolkit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">twitter_langchain.twitter_toolkit.</span></span><span class="sig-name descname"><span class="pre">TwitterToolkit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_toolkit.TwitterToolkit" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseToolkit</span></code></p>
+<p>Twitter (X) Toolkit.</p>
+<dl>
+<dt><em>Security Note</em>: This toolkit contains tools that can read and modify</dt><dd><p>the state of a service; e.g., by creating, deleting, or updating,
+reading underlying data.</p>
+<p>For example, this toolkit can be used post messages on Twitter (X).</p>
+<p>See [Security](<a class="reference external" href="https://python.langchain.com/docs/security">https://python.langchain.com/docs/security</a>) for more information.</p>
+</dd>
+<dt>Setup:</dt><dd><p>See detailed installation instructions here:
+<a class="reference external" href="https://python.langchain.com/docs/integrations/tools/twitter/#installation">https://python.langchain.com/docs/integrations/tools/twitter/#installation</a></p>
+<p>You will need to set the following environment
+variables:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>OPENAI_API_KEY
+TWITTER_ACCESS_TOKEN
+TWITTER_ACCESS_TOKEN_SECRET
+TWITTER_API_KEY
+TWITTER_API_SECRET
+TWITTER_BEARER_TOKEN</p>
+</dd>
+<dt>Instantiate:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">twitter_langchain</span> <span class="kn">import</span> <span class="n">TwitterToolkit</span>
+<span class="kn">from</span> <span class="nn">twitter_langchain</span> <span class="kn">import</span> <span class="n">TwitterAgentkitWrapper</span>
+
+<span class="n">twitter</span> <span class="o">=</span> <span class="n">TwitterAgentkitWrapper</span><span class="p">()</span>
+<span class="n">twitter_toolkit</span> <span class="o">=</span> <span class="n">TwitterToolkit</span><span class="o">.</span><span class="n">from_twitter_api_wrapper</span><span class="p">(</span><span class="n">twitter</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Tools:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tools</span> <span class="o">=</span> <span class="n">twitter_toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">tool</span> <span class="ow">in</span> <span class="n">tools</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tool</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>account_details
+account_mentions
+post_tweet
+post_tweet_reply
+</pre></div>
+</div>
+</dd>
+<dt>Use within an agent:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_openai</span> <span class="kn">import</span> <span class="n">ChatOpenAI</span>
+<span class="kn">from</span> <span class="nn">langgraph.prebuilt</span> <span class="kn">import</span> <span class="n">create_react_agent</span>
+
+<span class="c1"># Select example tool</span>
+<span class="n">tools</span> <span class="o">=</span> <span class="p">[</span><span class="n">tool</span> <span class="k">for</span> <span class="n">tool</span> <span class="ow">in</span> <span class="n">toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span> <span class="k">if</span> <span class="n">tool</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;post_tweet&quot;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">tools</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+<span class="n">llm</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+<span class="n">agent_executor</span> <span class="o">=</span> <span class="n">create_react_agent</span><span class="p">(</span><span class="n">llm</span><span class="p">,</span> <span class="n">tools</span><span class="p">)</span>
+
+<span class="n">example_query</span> <span class="o">=</span> <span class="s2">&quot;Post a hello tweet to the world&quot;</span>
+
+<span class="n">events</span> <span class="o">=</span> <span class="n">agent_executor</span><span class="o">.</span><span class="n">stream</span><span class="p">(</span>
+    <span class="p">{</span><span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="n">example_query</span><span class="p">)]},</span>
+    <span class="n">stream_mode</span><span class="o">=</span><span class="s2">&quot;values&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
+    <span class="n">event</span><span class="p">[</span><span class="s2">&quot;messages&quot;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pretty_print</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>================================ Human Message =================================
+Please post &#39;hello, world! c4b8e3744c2e4345be9e0622b4c0a8aa&#39; to twitter
+================================== Ai Message ==================================
+Tool Calls:
+    post_tweet (call_xVx4BMCSlCmCcbEQG1yyebbq)
+    Call ID: call_xVx4BMCSlCmCcbEQG1yyebbq
+    Args:
+        tweet: hello, world! c4b8e3744c2e4345be9e0622b4c0a8aa
+================================= Tool Message =================================
+Name: post_tweet
+Successfully posted!
+================================== Ai Message ==================================
+The message &quot;hello, world! c4b8e3744c2e4345be9e0622b4c0a8aa&quot; has been successfully posted to Twitter!
+
+...
+==================================[1m Ai Message [0m==================================
+
+I posted the tweet &quot;hello world&quot;.
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tools</strong> (<em>List</em><em>[</em><em>BaseTool</em><em>]</em><em>. The tools in the toolkit. Default is an empty list.</em>)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_toolkit.TwitterToolkit.from_twitter_api_wrapper">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_twitter_api_wrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">twitter_api_wrapper</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_toolkit.TwitterToolkit.from_twitter_api_wrapper" title="Link to this definition">¶</a></dt>
+<dd><p>Create a TwitterToolkit from a TwitterApiWrapper.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>twitter_api_wrapper</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper" title="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwitterApiWrapper</span></code></a></span>) – TwitterApiWrapper. The Twitter (X) API wrapper.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#twitter_langchain.twitter_toolkit.TwitterToolkit" title="twitter_langchain.twitter_toolkit.TwitterToolkit"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwitterToolkit</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TwitterToolkit. The Twitter toolkit.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_toolkit.TwitterToolkit.get_tools">
+<span class="sig-name descname"><span class="pre">get_tools</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.twitter_toolkit.TwitterToolkit.get_tools" title="Link to this definition">¶</a></dt>
+<dd><p>Get the tools in the toolkit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTool</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_toolkit.TwitterToolkit.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#twitter_langchain.twitter_toolkit.TwitterToolkit.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.twitter_toolkit.TwitterToolkit.tools">
+<span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTool</span></code><span class="pre">]</span></em><a class="headerlink" href="#twitter_langchain.twitter_toolkit.TwitterToolkit.tools" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-twitter_langchain">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-twitter_langchain" title="Link to this heading">¶</a></h2>
+<p>CDP Twitter Toolkit.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterApiWrapper">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">twitter_langchain.</span></span><span class="sig-name descname"><span class="pre">TwitterApiWrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterApiWrapper" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></p>
+<p>Wrapper for Twitter API.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterApiWrapper.client">
+<span class="sig-name descname"><span class="pre">client</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-data docutils literal notranslate"><span class="pre">Optional</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code><span class="pre">]</span></em><a class="headerlink" href="#twitter_langchain.TwitterApiWrapper.client" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterApiWrapper.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#twitter_langchain.TwitterApiWrapper.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterApiWrapper.run_action">
+<span class="sig-name descname"><span class="pre">run_action</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterApiWrapper.run_action" title="Link to this definition">¶</a></dt>
+<dd><p>Run a Twitter Action.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterApiWrapper.validate_environment">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">validate_environment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterApiWrapper.validate_environment" title="Link to this definition">¶</a></dt>
+<dd><p>Validate that Twitter access token, token secret, and tweepy exists in the environment.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-data docutils literal notranslate"><span class="pre">Any</span></code></span></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">twitter_langchain.</span></span><span class="sig-name descname"><span class="pre">TwitterTool</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterTool" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTool</span></code></p>
+<p>Tool for interacting with the Twitter API.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.args_schema">
+<span class="sig-name descname"><span class="pre">args_schema</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">type</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code><span class="pre">]</span> <span class="pre">|</span> <code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></em><a class="headerlink" href="#twitter_langchain.TwitterTool.args_schema" title="Link to this definition">¶</a></dt>
+<dd><p>Pydantic model class to validate and parse the tool’s input arguments.</p>
+<p>Args schema should be either:</p>
+<ul class="simple">
+<li><p>A subclass of pydantic.BaseModel.</p></li>
+</ul>
+<p>or
+- A subclass of pydantic.v1.BaseModel if accessing v1 namespace in pydantic 2</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.callback_manager">
+<span class="sig-name descname"><span class="pre">callback_manager</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional[BaseCallbackManager]</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.callback_manager" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.callbacks">
+<span class="sig-name descname"><span class="pre">callbacks</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Callbacks</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.callbacks" title="Link to this definition">¶</a></dt>
+<dd><p>Callbacks to be called during tool execution.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.description">
+<span class="sig-name descname"><span class="pre">description</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#twitter_langchain.TwitterTool.description" title="Link to this definition">¶</a></dt>
+<dd><p>Used to tell the model how/when/why to use the tool.</p>
+<p>You can provide few-shot examples as a part of the description.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.func">
+<span class="sig-name descname"><span class="pre">func</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">Callable</span></code><span class="pre">[</span><code class="xref py py-data docutils literal notranslate"><span class="pre">...</span></code><span class="pre">,</span> <code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code><span class="pre">]</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.func" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.handle_tool_error">
+<span class="sig-name descname"><span class="pre">handle_tool_error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional[Union[bool,</span> <span class="pre">str,</span> <span class="pre">Callable[[ToolException],</span> <span class="pre">str]]]</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.handle_tool_error" title="Link to this definition">¶</a></dt>
+<dd><p>Handle the content of the ToolException thrown.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.handle_validation_error">
+<span class="sig-name descname"><span class="pre">handle_validation_error</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional[Union[bool,</span> <span class="pre">str,</span> <span class="pre">Callable[[Union[ValidationError,</span> <span class="pre">ValidationErrorV1]],</span> <span class="pre">str]]]</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.handle_validation_error" title="Link to this definition">¶</a></dt>
+<dd><p>Handle the content of the ValidationError thrown.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.metadata">
+<span class="sig-name descname"><span class="pre">metadata</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional[dict[str,</span> <span class="pre">Any]]</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.metadata" title="Link to this definition">¶</a></dt>
+<dd><p>Optional metadata associated with the tool. Defaults to None.
+This metadata will be associated with each call to this tool,
+and passed as arguments to the handlers defined in <cite>callbacks</cite>.
+You can use these to eg identify a specific instance of a tool with its use case.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{'arbitrary_types_allowed':</span> <span class="pre">True,</span> <span class="pre">'extra':</span> <span class="pre">'ignore',</span> <span class="pre">'protected_namespaces':</span> <span class="pre">()}</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.name">
+<span class="sig-name descname"><span class="pre">name</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">str</span></code></em><a class="headerlink" href="#twitter_langchain.TwitterTool.name" title="Link to this definition">¶</a></dt>
+<dd><p>The unique name of the tool that clearly communicates its purpose.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.response_format">
+<span class="sig-name descname"><span class="pre">response_format</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Literal['content',</span> <span class="pre">'content_and_artifact']</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.response_format" title="Link to this definition">¶</a></dt>
+<dd><p>The tool response format. Defaults to ‘content’.</p>
+<p>If “content” then the output of the tool is interpreted as the contents of a
+ToolMessage. If “content_and_artifact” then the output is expected to be a
+two-tuple corresponding to the (content, artifact) of a ToolMessage.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.return_direct">
+<span class="sig-name descname"><span class="pre">return_direct</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.return_direct" title="Link to this definition">¶</a></dt>
+<dd><p>Whether to return the tool’s output directly.</p>
+<p>Setting this to True means
+that after the tool is called, the AgentExecutor will stop looping.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.tags">
+<span class="sig-name descname"><span class="pre">tags</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">Optional[list[str]]</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.tags" title="Link to this definition">¶</a></dt>
+<dd><p>Optional list of tags associated with the tool. Defaults to None.
+These tags will be associated with each call to this tool,
+and passed as arguments to the handlers defined in <cite>callbacks</cite>.
+You can use these to eg identify a specific instance of a tool with its use case.</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.twitter_api_wrapper">
+<span class="sig-name descname"><span class="pre">twitter_api_wrapper</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><a class="reference internal" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper" title="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwitterApiWrapper</span></code></a></em><a class="headerlink" href="#twitter_langchain.TwitterTool.twitter_api_wrapper" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterTool.verbose">
+<span class="sig-name descname"><span class="pre">verbose</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">bool</span></em><a class="headerlink" href="#twitter_langchain.TwitterTool.verbose" title="Link to this definition">¶</a></dt>
+<dd><p>Whether to log the tool’s progress.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterToolkit">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">twitter_langchain.</span></span><span class="sig-name descname"><span class="pre">TwitterToolkit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterToolkit" title="Link to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseToolkit</span></code></p>
+<p>Twitter (X) Toolkit.</p>
+<dl>
+<dt><em>Security Note</em>: This toolkit contains tools that can read and modify</dt><dd><p>the state of a service; e.g., by creating, deleting, or updating,
+reading underlying data.</p>
+<p>For example, this toolkit can be used post messages on Twitter (X).</p>
+<p>See [Security](<a class="reference external" href="https://python.langchain.com/docs/security">https://python.langchain.com/docs/security</a>) for more information.</p>
+</dd>
+<dt>Setup:</dt><dd><p>See detailed installation instructions here:
+<a class="reference external" href="https://python.langchain.com/docs/integrations/tools/twitter/#installation">https://python.langchain.com/docs/integrations/tools/twitter/#installation</a></p>
+<p>You will need to set the following environment
+variables:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<p>OPENAI_API_KEY
+TWITTER_ACCESS_TOKEN
+TWITTER_ACCESS_TOKEN_SECRET
+TWITTER_API_KEY
+TWITTER_API_SECRET
+TWITTER_BEARER_TOKEN</p>
+</dd>
+<dt>Instantiate:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">twitter_langchain</span> <span class="kn">import</span> <span class="n">TwitterToolkit</span>
+<span class="kn">from</span> <span class="nn">twitter_langchain</span> <span class="kn">import</span> <span class="n">TwitterAgentkitWrapper</span>
+
+<span class="n">twitter</span> <span class="o">=</span> <span class="n">TwitterAgentkitWrapper</span><span class="p">()</span>
+<span class="n">twitter_toolkit</span> <span class="o">=</span> <span class="n">TwitterToolkit</span><span class="o">.</span><span class="n">from_twitter_api_wrapper</span><span class="p">(</span><span class="n">twitter</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd>
+<dt>Tools:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">tools</span> <span class="o">=</span> <span class="n">twitter_toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">tool</span> <span class="ow">in</span> <span class="n">tools</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">tool</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>account_details
+account_mentions
+post_tweet
+post_tweet_reply
+</pre></div>
+</div>
+</dd>
+<dt>Use within an agent:</dt><dd><div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">langchain_openai</span> <span class="kn">import</span> <span class="n">ChatOpenAI</span>
+<span class="kn">from</span> <span class="nn">langgraph.prebuilt</span> <span class="kn">import</span> <span class="n">create_react_agent</span>
+
+<span class="c1"># Select example tool</span>
+<span class="n">tools</span> <span class="o">=</span> <span class="p">[</span><span class="n">tool</span> <span class="k">for</span> <span class="n">tool</span> <span class="ow">in</span> <span class="n">toolkit</span><span class="o">.</span><span class="n">get_tools</span><span class="p">()</span> <span class="k">if</span> <span class="n">tool</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="s2">&quot;post_tweet&quot;</span><span class="p">]</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">tools</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span>
+
+<span class="n">llm</span> <span class="o">=</span> <span class="n">ChatOpenAI</span><span class="p">(</span><span class="n">model</span><span class="o">=</span><span class="s2">&quot;gpt-4o-mini&quot;</span><span class="p">)</span>
+<span class="n">agent_executor</span> <span class="o">=</span> <span class="n">create_react_agent</span><span class="p">(</span><span class="n">llm</span><span class="p">,</span> <span class="n">tools</span><span class="p">)</span>
+
+<span class="n">example_query</span> <span class="o">=</span> <span class="s2">&quot;Post a hello tweet to the world&quot;</span>
+
+<span class="n">events</span> <span class="o">=</span> <span class="n">agent_executor</span><span class="o">.</span><span class="n">stream</span><span class="p">(</span>
+    <span class="p">{</span><span class="s2">&quot;messages&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="s2">&quot;user&quot;</span><span class="p">,</span> <span class="n">example_query</span><span class="p">)]},</span>
+    <span class="n">stream_mode</span><span class="o">=</span><span class="s2">&quot;values&quot;</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="k">for</span> <span class="n">event</span> <span class="ow">in</span> <span class="n">events</span><span class="p">:</span>
+    <span class="n">event</span><span class="p">[</span><span class="s2">&quot;messages&quot;</span><span class="p">][</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pretty_print</span><span class="p">()</span>
+</pre></div>
+</div>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>================================ Human Message =================================
+Please post &#39;hello, world! c4b8e3744c2e4345be9e0622b4c0a8aa&#39; to twitter
+================================== Ai Message ==================================
+Tool Calls:
+    post_tweet (call_xVx4BMCSlCmCcbEQG1yyebbq)
+    Call ID: call_xVx4BMCSlCmCcbEQG1yyebbq
+    Args:
+        tweet: hello, world! c4b8e3744c2e4345be9e0622b4c0a8aa
+================================= Tool Message =================================
+Name: post_tweet
+Successfully posted!
+================================== Ai Message ==================================
+The message &quot;hello, world! c4b8e3744c2e4345be9e0622b4c0a8aa&quot; has been successfully posted to Twitter!
+
+...
+==================================[1m Ai Message [0m==================================
+
+I posted the tweet &quot;hello world&quot;.
+</pre></div>
+</div>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>tools</strong> (<em>List</em><em>[</em><em>BaseTool</em><em>]</em><em>. The tools in the toolkit. Default is an empty list.</em>)</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterToolkit.from_twitter_api_wrapper">
+<em class="property"><span class="pre">classmethod</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">from_twitter_api_wrapper</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">twitter_api_wrapper</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterToolkit.from_twitter_api_wrapper" title="Link to this definition">¶</a></dt>
+<dd><p>Create a TwitterToolkit from a TwitterApiWrapper.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>twitter_api_wrapper</strong> (<span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#twitter_langchain.twitter_api_wrapper.TwitterApiWrapper" title="twitter_langchain.twitter_api_wrapper.TwitterApiWrapper"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwitterApiWrapper</span></code></a></span>) – TwitterApiWrapper. The Twitter (X) API wrapper.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><span class="sphinx_autodoc_typehints-type"><a class="reference internal" href="#twitter_langchain.twitter_toolkit.TwitterToolkit" title="twitter_langchain.twitter_toolkit.TwitterToolkit"><code class="xref py py-class docutils literal notranslate"><span class="pre">TwitterToolkit</span></code></a></span></p>
+</dd>
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>TwitterToolkit. The Twitter toolkit.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterToolkit.get_tools">
+<span class="sig-name descname"><span class="pre">get_tools</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#twitter_langchain.TwitterToolkit.get_tools" title="Link to this definition">¶</a></dt>
+<dd><p>Get the tools in the toolkit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><span class="sphinx_autodoc_typehints-type"><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code>[<code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTool</span></code>]</span></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterToolkit.model_config">
+<span class="sig-name descname"><span class="pre">model_config</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="pre">ClassVar[ConfigDict]</span></em><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">{}</span></em><a class="headerlink" href="#twitter_langchain.TwitterToolkit.model_config" title="Link to this definition">¶</a></dt>
+<dd><p>Configuration for the model, should be a dictionary conforming to [<cite>ConfigDict</cite>][pydantic.config.ConfigDict].</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="twitter_langchain.TwitterToolkit.tools">
+<span class="sig-name descname"><span class="pre">tools</span></span><em class="property"><span class="p"><span class="pre">:</span></span><span class="w"> </span><code class="xref py py-class docutils literal notranslate"><span class="pre">list</span></code><span class="pre">[</span><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseTool</span></code><span class="pre">]</span></em><a class="headerlink" href="#twitter_langchain.TwitterToolkit.tools" title="Link to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="Main">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">CDP Agentkit - Twitter LangChain</a></h1>
+
+
+
+
+
+
+
+
+
+<search id="searchbox" style="display: none" role="search">
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" placeholder="Search"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</search>
+<script>document.getElementById('searchbox').style.display = "block"</script><h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">twitter_langchain</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">twitter_langchain package</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+  <li><a href="modules.html">twitter_langchain</a><ul>
+      <li>Previous: <a href="modules.html" title="previous chapter">twitter_langchain</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &#169;.
+      
+      |
+      Powered by <a href="https://www.sphinx-doc.org/">Sphinx 8.1.3</a>
+      &amp; <a href="https://alabaster.readthedocs.io">Alabaster 1.0.0</a>
+      
+      |
+      <a href="_sources/twitter_langchain.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
