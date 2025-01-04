@@ -3,6 +3,7 @@
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/cdp-agentkit-core?style=flat-square)](https://pypistats.org/packages/cdp-agentkit-core)
 [![GitHub star chart](https://img.shields.io/github/stars/coinbase/cdp-agentkit?style=flat-square)](https://star-history.com/#coinbase/cdp-agentkit)
 [![Open Issues](https://img.shields.io/github/issues-raw/coinbase/cdp-agentkit?style=flat-square)](https://github.com/coinbase/cdp-agentkit/issues)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSetland34%2FAgentkit.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FSetland34%2FAgentkit?ref=badge_shield)
 
 The **Coinbase Developer Platform (CDP) Agentkit for Python** simplifies bringing your AI Agents onchain. Every AI Agent deserves a crypto wallet!
 
@@ -51,3 +52,6 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for more information.
 - [CDP Agentkit Documentation](https://docs.cdp.coinbase.com/agentkit/docs/welcome)
 - [API Reference: CDP Agentkit Core](https://coinbase.github.io/cdp-agentkit/cdp-agentkit-core/index.html)
 - [API Reference: CDP Agentkit LangChain Extension](https://coinbase.github.io/cdp-agentkit/cdp-langchain/index.html)
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FSetland34%2FAgentkit.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FSetland34%2FAgentkit?ref=badge_large)
